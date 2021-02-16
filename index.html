@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+      Library
+    </h1>
+
+    <form onsubmit="return false">
+           <label for="title">Title:</label>
+           <input type="text" id="title">
+           <label for="author">Author:</label>
+           <input type="text" id="author">
+           <label for="pages">Pages:</label>
+           <input type="number" id="pages">
+         <button type="submit" id="add">Add</button>
+    </form>
+       
+    <div class="shelf">
+        <div class="book" id="templatebook">
+          <div class="bookinfo title">
+            Title: Rod Dol's Big Day
+          </div>
+          <div class="bookinfo author">
+            Author: Rod Dol
+          </div>
+          <div class="bookinfo pages"> 
+            Pages: 500
+          </div>
+          <button class="bookinfo readbtn"> Read </button>
+          <button class="bookinfo deletebtn"> Delete </button>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
